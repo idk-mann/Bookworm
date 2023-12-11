@@ -420,7 +420,7 @@ section{
 
 /*bubblewrap picture in donation*/
 .bubblewrap{
-	background-image: url("images/bubblewrap.jpg");
+	background-image: url("Images/bubblewrap.jpg");
 	min-height: 500px;
 	background-attachment: fixed;
 	background-position: center;
@@ -439,7 +439,7 @@ section{
 
 /*cardbox picture*/
 .cardbox{
-	background-image: url("images/cardbox.jpg");
+	background-image: url("Images/cardbox.jpg");
 	min-height: 500px;
 	background-attachment: fixed;
 	background-position: center;
@@ -453,7 +453,7 @@ section{
 
 /*box picture*/
 .donobox{
-	background-image: url("images/box.jpg");
+	background-image: url("Images/box.jpg");
 	min-height: 500px;
 	background-attachment: fixed;
 	background-position: center;
@@ -472,7 +472,7 @@ section{
 
 /*shipping picture*/
 .donoshipping{
-	background-image: url("images/Ship.jpg");
+	background-image: url("Images/Ship.jpg");
 	min-height: 500px;
 	background-attachment: fixed;
 	background-position: center;
