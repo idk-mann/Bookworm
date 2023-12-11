@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<!--Start of html-->
+<html lang="en">
+
+<!--Description: Group 3 Assignment-->
+<!--Author: Bookworms-->
+<!--Date: 22 September 2023-->
+<!--Validated: Ok 10 November 2023-->
+
+<head>
+  <title>Welcome to The Story Keeper</title>
+  <meta charset="utf-8">
+  <meta name="Author" content="Bookworms">
+  <meta name="Description" content="The Story Keeper">
+  <meta name="keywords" content="Books,Shop,Customer,Comments">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--Link External CSS-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+<!--Link External javascript--> 
+  <script defer src="script.js"></script> 
+</head>
+
+<!--start of body-->
+<body>
+  <header>
+    <a href="index.html">
+      <img src="Images/TheStoryKeeperLogo.jpg" alt="The Story Keeper.com" width="800" height="160"></a>
+  </header>
+  
+
+<!--start of navigation-->
+<nav>
+<ul class="navbar">
+  <li><a href="bookworms.html">About Us</a></li>
+  <li class="dropdown">
+    <a class="dropbtn">Products</a>
+    <ul class="dropdown-content"> 
+      <li><a href="product_fiction.html">Fiction</a></li>
+      <li><a href="product_nonfiction.html">Non-fiction</a></li>
+      <li><a href="product_Donation.html">Book Donation</a></li>
+      <li><a href="product_mysterybox.html">Mystery Box</a></li>
+    </ul>
+  </li> 
+  <li><a href="order.html">Order</a></li>
+  <li><a href="recommend.html">Recommendation</a></li>
+  <li><a href="feedback.html">Contact Us</a></li>
+</ul>
+</nav>
+
+<!--content starts HERE-->
+<article>
+
+<h1>How to contact us?</h1>
+
+<div class="how_to_contact">
+<p>If you have any questions, suggestions, or feedback regarding our website or our products, please don't hesitate to contact us.</p>
+
+<p>
+&#127968;Address: No.52, Jalan Stampin, Green Heights, 93350 Kuching, Sarawak.</p>
+
+<p>
+ &#128222;Whatsapp: <a href="tel:+60129880011">+6012-9880011</a><br>
+  (Only open for message enquiries.)
+</p>
+
+<p>
+  &#128233;Email: <a href="mailto:order@thestorykeeper.com">order@thestorykeeper.com</a>
+</p>
+
+<p>
+You're also welcomed to leave down your contact information here, we'll get in touch with you as soon as possible! ⬇️ 
+</p>
+
+</div>
+
+<br>
+  <h2 id="feedbacktitle">Feedback Form</h2>
+    <form id="fb">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <table class="feedback_table">
+                <tr>
+                    <td class="feedback_td">
+                        <label for="name">Name:</label>
+                    </td>
+                    <td class="feedback_td">
+                        <input class="text_input" type="text" id="name" name="name" required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="feedback_td">
+                        <label for="email">Email:</label>
+                    </td>
+                    <td class="feedback_td">
+                        <input class="text_input" type="text" id="email" name="email" required="required" size="40">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="feedback_td">
+                        <label>Gender:</label>
+                    </td>
+                    <td class="radiobutton">
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="feedback_td">
+                        <label>Subscribe:</label>
+                    </td>
+                    <td class="feedback_td">
+						<label for="subscribe_sms">SMS</label>
+						<input type="checkbox" id="subscribe_sms" name="subscribe_sms" value="SMS">
+						<label for="subscribe_email">Email</label>
+						<input type="checkbox" id="subscribe_email" name="subscribe_email" value="Email" checked="checked">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Message</legend>
+            <table>
+                <tr>
+                    <td class="feedback_td">
+                        <label for="message">Message:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="feedback_td">
+                        <textarea class="feedback_textarea" id="message" name="message" rows="4" required="required"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Date and Time</legend>
+            <table>
+                <tr>
+                    <td class="feedback_td">
+                        <label for="meeting-date">Date:</label>
+                    </td>
+                    <td class="feedback_td">
+                        <input class="feedback_date" type="date" id="meeting-date" name="meeting-date">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="feedback_td">
+                        <label for="meeting-time">Time:</label>
+                    </td>
+                    <td class="feedback_td">
+                        <input class="feedback_time" type="time" id="meeting-time" name="meeting-time">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+	
+        <p class="button">
+            <input class="feedback_submit" type="submit" value="Submit"><br>
+			 <input type="reset" value="Reset">
+        </p>
+    </form>
+
+<hr>
+
+
+</article>
+
+<!--content ends HERE-->
+<footer>
+	<p><a href="Bookworms.html">
+		&copy;Bookworms </a> | <span id="last-updated"></span></p>
+</footer>
+
+</body>
+</html>

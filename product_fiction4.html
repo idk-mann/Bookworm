@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<!--Start of html-->
+<html lang="en">
+
+<!--Description: Group 3 Assignment-->
+<!--Author: Bookworms-->
+<!--Date: 22 September 2023-->
+<!--Validated: Ok 10 November 2023-->
+
+<head>
+	<title>Welcome to The Story Keeper</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Bookworms">
+	<meta name="Description" content="The Story Keeper">
+	<meta name="keywords" content="Books,Shop,Customer,Comments">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--Link External CSS-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+<!--Link External javascript-->	
+	<script defer src="script.js"></script>
+</head>
+
+<!--start of body-->
+<body>
+	<header>
+		<a href="index.html">
+			<img src="Images/TheStoryKeeperLogo.jpg" alt="The Story Keeper.com" width="800" height="160"></a>
+	</header>
+	
+
+<!--start of navigation-->
+<nav>
+<ul class="navbar">
+	<li><a href="bookworms.html">About Us</a></li>
+	<li class="dropdown">
+		<a class="dropbtn">Products</a>
+		<ul class="dropdown-content">	
+			<li><a href="product_fiction.html">Fiction</a></li>
+			<li><a href="product_nonfiction.html">Non-fiction</a></li>
+			<li><a href="product_Donation.html">Book Donation</a></li>
+			<li><a href="product_mysterybox.html">Mystery Box</a></li>
+		</ul>
+	</li>	
+	<li><a href="order.html">Order</a></li>
+	<li><a href="recommend.html">Recommendation</a></li>
+	<li><a href="feedback.html">Contact Us</a></li>
+</ul>
+</nav>
+
+<!--content starts HERE-->
+<article>
+<h1>Fiction</h1>
+<ol class="bookgenre"> 
+    <li>Classics & Literature</li>
+    <li>Contemporary Fiction</li>
+    <li>Thriller</li>
+    <li>Romance</li>
+    <li>Fantasy</li>
+    <li>Philosophical Novel</li>
+</ol>
+
+<div class="row">
+	<!--This information is taken from https://www.amazon.sg/Kill-Mockingbird-Harper-Lee/dp/0060935464/ref=sr_1_2?crid=2PC9KLEY46FQ4&keywords=harper+lee&qid=1695382195&s=books&sprefix=harpe%2Cstripbooks%2C859&sr=1-2-->
+	<div class="column">
+		<img src="Images/28tokill.jpg" alt="To Kill A Mockingbird" width="200" height="300">
+		<p>To Kill A Mockingbird</p>
+		<p>RM 81.90</p>
+	</div>
+
+	<!--This information is taken from https://www.amazon.sg/Help-Kathryn-Stockett/dp/0241956536/ref=sr_1_2?keywords=the+help&qid=1695382229&sr=8-2-->
+	<div class="column">	
+		<img src="Images/29thehelp.jpg" alt="The Help" width="200" height="300">
+		<p>The Help</p>
+		<p>RM 75.90</p>
+	</div>
+
+	<!--This information is taken from https://www.amazon.sg/Siddhartha-Penguin-Classics-Hermann-Hesse/dp/0142437182/ref=sr_1_13?crid=2Q4K1I0V0JBV0&keywords=hermann+hesse&qid=1695382758&s=books&sprefix=hermann+hesse+%2Cstripbooks%2C406&sr=1-13-->
+	<div class="column">
+		<img src="Images/30siddhartha.jpg" alt="Siddhartha" width="200" height="300">
+		<p>Siddhartha</p>
+		<p>RM 82.90</p>	
+	</div>		
+
+	<!--This information is taken from https://www.amazon.sg/Steppenwolf-Hermann-Hesse/dp/1324036818/ref=sr_1_4?crid=2Q4K1I0V0JBV0&keywords=hermann+hesse&qid=1695382758&s=books&sprefix=hermann+hesse+%2Cstripbooks%2C406&sr=1-4-->
+	<div class="column">
+		<img src="Images/31thesteppenwolf.jpg" alt="The Steppenwolf" width="200" height="300">
+		<p>The Steppenwolf</p>
+		<p>RM 125.90</p>		
+	</div>	
+
+	<!--This information is taken from https://www.amazon.sg/Demian-Story-Emil-Sinclairs-Youth/dp/0143106783/ref=sr_1_8?crid=2Q4K1I0V0JBV0&keywords=hermann+hesse&qid=1695382758&s=books&sprefix=hermann+hesse+%2Cstripbooks%2C406&sr=1-8-->
+	<div class="column">
+		<img src="Images/32demian.jpg" alt="Demian" width="200" height="300">
+		<p>Demian: The Story Of Emil Sinclair’s Youth</p>
+		<p>RM 82.90</p>		
+	</div>	
+</div>
+
+<div class="pagination">
+	<a href="product_fiction.html">1</a>
+	<a href="product_fiction2.html">2</a>
+	<a href="product_fiction3.html">3</a>
+	<a class="active" href="product_fiction4.html">4</a>
+</div>
+
+</article>
+<!--content ends here-->
+
+<hr>
+<footer>
+	<p><a href="bookworms.html">
+		&copy;Bookworms </a> | <span id="last-updated"></span></p>
+</footer>
+
+</body>
+
+</html>

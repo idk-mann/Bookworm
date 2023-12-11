@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<!--Start of html-->
+<html lang="en">
+
+<!--Description: Group 3 Assignment-->
+<!--Author: Bookworms-->
+<!--Date: 22 September 2023-->
+<!--Validated: Ok 10 November 2023-->
+
+<head>
+	<title>Welcome to The Story Keeper</title>
+	<meta charset="utf-8">
+	<meta name="Author" content="Bookworms">
+	<meta name="Description" content="The Story Keeper">
+	<meta name="keywords" content="Books,Shop,Customer,Comments">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--Link External CSS-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+<!--Link External javascript--> 
+    <script defer src="script.js"></script>
+</head>
+
+<!--start of body-->
+<body>
+	<header>
+		<a href="index.html">
+			<img src="Images/TheStoryKeeperLogo.jpg" alt="The Story Keeper.com" width="800" height="160"></a>
+	</header>
+	
+
+<!--start of navigation-->
+<nav>
+<ul class="navbar">
+	<li><a href="bookworms.html">About Us</a></li>
+	<li class="dropdown">
+		<a class="dropbtn">Products</a>
+		<ul class="dropdown-content">	
+			<li><a href="product_fiction.html">Fiction</a></li>
+			<li><a href="product_nonfiction.html">Non-fiction</a></li>
+			<li><a href="product_Donation.html">Book Donation</a></li>
+			<li><a href="product_mysterybox.html">Mystery Box</a></li>
+		</ul>
+	</li>	
+	<li><a href="order.html">Order</a></li>
+	<li><a href="recommend.html">Recommendation</a></li>
+	<li><a href="feedback.html">Contact Us</a></li>
+</ul>
+</nav>
+
+<!--content starts HERE-->
+<article>
+     <h1>Order Form</h1>
+     <p class="orderformtext"><em>The confirmation email & order form will be sent once the bookworms received your order.</em></p>
+<form name="orderform" action="mailto:order@thestorykeeper.com" method="post" enctype="text/plain">
+<table class="order_table">
+    <tr>
+        <td class="order_td"><label for="customer_name">Customer Name:</label></td>
+        <td class="order_td" colspan="3"><input type="text" name="name" size="50" required="required" id="customer_name"></td>
+    </tr>
+    <tr>
+        <td class="order_td"><label for="delivery_address">Delivery Address:</label></td>
+        <td class="order_td" colspan="3"><input type="text" name="address" size="50" required="required" id="delivery_address"></td>
+    </tr>
+    <tr>
+        <th class="order_th">PRODUCT(Book Title)</th>
+        <th class="order_th">QTY</th>
+        <th class="order_th">PRICE(RM)</th>
+        <th class="order_th">TOTAL(RM)</th>
+    </tr>
+    <tr>
+        <td class="order_td"><input type="text" name="booktitle1" size="25" required="required"></td>
+        <td class="order_td"><input class="order_input" type="number" value="0" min="0"></td>
+        <td class="order_td"><input type="text" name="price1" maxlength="5" size="8" required="required"></td>
+        <td class="order_td"><input type="text" name="total1" maxlength="5" size="8" required="required"></td>
+    </tr>
+    <tr>
+        <td class="order_td"><input type="text" name="booktitle2" size="25"></td>
+        <td class="order_td"><input class="order_input" type="number" value="0" min="0"></td>
+        <td class="order_td"><input type="text" name="price2" maxlength="5" size="8"></td>
+        <td class="order_td"><input type="text" name="total2" maxlength="5" size="8"></td>
+    </tr>
+    <tr>
+        <td class="order_td"><input type="text" name="booktitle3" size="25"></td>
+        <td class="order_td"><input class="order_input" type="number" value="0" min="0"></td>
+        <td class="order_td"><input type="text" name="price3" maxlength="5" size="8"></td>
+        <td class="order_td"><input type="text" name="total3" maxlength="5" size="8"></td>
+    </tr>
+    <tr>
+        <td class="order_td"><input type="text" name="booktitle4" size="25"></td>
+        <td class="order_td"><input class="order_input" type="number" value="0" min="0"></td>
+        <td class="order_td"><input type="text" name="price4" maxlength="5" size="8"></td>
+        <td class="order_td"><input type="text" name="total4" maxlength="5" size="8"></td>
+    </tr>
+    <tr>
+        <td class="order_td"><input type="text" name="booktitle5" size="25"></td>
+        <td class="order_td"><input class="order_input" type="number" value="0" min="0"></td>
+        <td class="order_td"><input type="text" name="price5" maxlength="5" size="8"></td>
+        <td class="order_td"><input type="text" name="total5" maxlength="5" size="8"></td>
+    </tr>
+    
+    <!-- Office use row-->
+    <tr>
+        <td colspan="4" class="order_td" id="forofficeuse"><em>-----The Statement Below is for Bookworms Office Use-----</em></td>      
+    </tr>
+
+    <tr>
+        <td class="order_td"></td>
+        <td class="order_td"></td>
+        <th class="order_th">SUBTOTAL</th>
+        <td class="order_td"></td>
+    </tr>
+    <tr>
+        <td class="order_td"></td>
+        <td class="order_td"></td>
+        <th class="order_th">TAX</th>
+        <td class="order_td"></td>
+    </tr>
+    <tr>
+        <td class="order_td"></td>
+        <td class="order_td"></td>
+        <th class="order_th">SHIPPING</th>
+        <td class="order_td"></td>
+    </tr>
+    <tr>
+        <td class="order_td"></td>
+        <td class="order_td"></td>
+        <th class="order_th">BALANCE DUE</th>
+        <td class="order_td"></td>
+    </tr>
+    <!--End of office use-->
+</table>
+
+<br>
+
+<p class="button">
+	<input type="submit" value="Submit"><br>
+    <input type="reset" value="Reset">
+</p>
+
+</form>
+
+</article>
+<!--content ends here-->
+<hr>
+<footer>
+	<p><a href="Bookworms.html">
+		&copy;Bookworms</a> | <span id="last-updated"></span></p>
+</footer>
+
+</body>
+
+</html>

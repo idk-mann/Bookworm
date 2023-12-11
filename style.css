@@ -1,0 +1,931 @@
+/* Description: Group 3 Assignment*/
+/* Author: Bookworms*/
+/* Date: 23 September 2023*/
+/* Validated: OK 22 November 2023*/
+
+
+body{
+	background-color: #F3E7D3;
+	color: maroon;
+}
+
+h1{
+	font-family: "times new roman", sans-serif;
+	text-align: center;
+	font-size: 66px;
+	font-weight: bold;
+}
+
+header{
+	text-align: center;
+}
+
+img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+footer{
+	text-align: center;}
+
+/*Dropdown menu*/
+nav{
+	color: maroon;
+	font-size: 20px;
+}
+
+.navbar{
+	list-style-type: none;
+	padding: 0;
+	margin:0;
+	text-align: center;
+	font-family: "copperplate", sans-serif;
+}
+
+.navbar li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.navbar a{
+	text-decoration: none;
+	color:black;
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+.navbar a:hover{
+	text-decoration: underline;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #e8d1ab;
+	min-width: 100px;
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+
+}
+
+.dropdown-content li{
+	padding: 10px;
+}
+
+.dropdown-content a{
+	color: black;
+	text-decoration: none;
+}
+
+.dropdown-content a:hover{
+	background-color: #555;
+}
+/* End of dropdown */
+
+
+/* Slideshow at homepage */
+.center-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+* {box-sizing: border-box;}
+body {font-family: sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	text-align: center;
+	height: 10px;
+	width: 10px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.dot2{
+	text-align: center;
+}
+
+.active {
+	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* End of slideshow */
+
+
+/* Homepage */
+blockquote{
+	font-family: copperplate, sans-serif;
+	text-align: center;
+ 	font-size: 20px;
+}
+
+#Welcome{
+	text-align: center;
+	font-size: 20px;
+}
+
+
+.row h2,.column,.row{
+	text-align: center;
+	margin: 0;
+	padding: 3%;
+}
+
+/*bestseller*/
+.container_collections{
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	background-color: #e8dac3;
+	padding: 20px;
+}
+
+.text_collections,.video_collections{
+	font-size: 18px;
+	flex: 1;
+	padding: 20px;
+}
+
+.clicktoorder{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	padding-top: 5px;
+}
+
+
+/*homepage external links*/
+* {
+	box-sizing: border-box;
+
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+	text-align: center;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+/*end of homepage external links*/
+
+section{
+	text-align: center;
+}
+
+#clicktoorder{
+	padding-top: 10px;
+}
+
+#Disclaimer{
+	font-size: 20px;
+	border: 2px solid red;
+	color: red;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+/*bookgenre in fiction and non-fiction pages*/
+.bookgenre{
+	text-align: center;
+}
+
+.bookgenre ol{
+	margin-right: 10px;
+}
+
+.bookgenre li {
+	display: inline-block;
+	margin-right: 20px; 
+}
+/*end of bookgenre in fiction and non-fiction pages*/
+
+/* pagination */
+.pagination {
+	text-align: center;
+}
+
+.pagination a{
+	color: maroon;
+	padding: 5px 10px;
+}
+
+.pagination a.active{
+	background-color: #d8b06f;
+}
+/* End of pagination */
+
+
+/* About us */
+.Intro{
+	width: 100%;
+	padding: 0 20%;
+	font-size: 20px;
+}
+
+#aboutus{
+	font-size: 30px;
+	text-decoration: underline;
+	padding: 10px;
+}
+
+.bookworms th{
+	text-align: right;
+}
+
+.bookworms td{
+	text-align: left;
+	padding: 20px 10px;
+}
+
+.bookworms{
+	border: 2px solid maroon;
+	border-collapse: separate;
+	padding: 10px;
+
+}
+/* End of about us */
+
+
+/* Order */
+.orderformtext{
+	text-align: center;
+	font-size: 20px;
+}
+
+#forofficeuse{
+	text-align: center;
+}
+
+.order_table {
+	width: 70%;
+	border-collapse: collapse;
+	margin: 0 auto;
+	background-color: #e8dac3;
+}
+
+.order_th, .order_td {
+	font-size: 16px;
+	border: 1px solid #ddd;
+	padding: 5px;
+	text-align: left;
+}
+
+.order_th {
+	background-color: #f2f2f2;
+}
+
+.order_input[type="number"] {
+	width: 70px;
+	padding: 6px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	background-color: Moccasin;
+}
+
+.order_td input[type="text"]{
+	width: 60%;
+	height: 30px;
+	border: 1px solid #ddd;
+	background-color: Moccasin;
+}
+/* End of Order */
+
+
+/* Feedback */
+#fb{
+	width: 70%;
+	margin: 0 auto;
+}
+
+#feedbacktitle{
+	margin:5px 220px;
+}
+
+.feedback_table {
+	width: 100%;
+}
+
+.feedback_td {
+	padding: 10px;
+}
+
+.radiobutton {
+	padding-left: 10px;
+}
+
+
+.text_input[type="text"],
+.feedback_date[type="date"],
+.feedback_time[type="time"] {
+	width: 100%;
+	height: 300%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+	background-color: Moccasin;
+}
+
+.feedback_textarea{
+	background-color: Moccasin;
+	width: 800px;
+	height: 100px;
+}
+     
+.feedback_submit[type="submit"] {
+	width: 100px;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #4CAF50;
+	color: white;
+	cursor: pointer;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.feedback_submit[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+.how_to_contact{
+	width: 100%;
+	padding: 0 20%;
+	font-size: 20px;
+}
+/* End of Feedback */
+
+
+/*Donation page*/
+.donation blockquote{
+	font-size: 50px;
+	white-space: pre-line;
+}
+
+/*the video in donation*/
+.dono_container {
+	display: flex;
+	justify-content: center;
+}
+
+
+/*how to donate, instructions*/
+.donate_text{
+	font-size: 27px;
+	height: 200px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+/*bubblewrap picture in donation*/
+.bubblewrap{
+	background-image: url("images/bubblewrap.jpg");
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*bubblewrap text*/
+.dono_text{
+	font-size: 27px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*cardbox picture*/
+.cardbox{
+	background-image: url("images/cardbox.jpg");
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.dono_text blockquote{
+	font-size: 27px;
+}
+
+/*box picture*/
+.donobox{
+	background-image: url("images/box.jpg");
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*box text*/
+.donobox_text{
+	font-size: 27px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*shipping picture*/
+.donoshipping{
+	background-image: url("images/Ship.jpg");
+	min-height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*shipping text*/
+.donoshipping_text{
+	font-size: 27px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*donation text*/
+.dono_question{
+	font-size: 20px;
+	margin-right: 8%;
+	margin-left: 8%;
+	line-height: 1.2;
+	padding-bottom: 30px;
+}
+
+/*donation question heading*/
+.dono_question h2 {
+	padding-bottom: 30px;
+}
+
+/*Start of recomendation css*/
+
+/*styling for section list*/
+.reco_list{
+	list-style-type: none;
+	font-size: 20px;
+	line-height: 1.7;
+	text-align: center;
+	justify-items: center;
+	padding-left: 140px;
+	padding-right: 140px;
+}
+
+/*styling for section list*/
+.reco_list li{
+	display: inline;
+	padding: 20px;
+	margin: 60px 10px;
+	text-decoration: none;
+}
+
+/*styling for section list link*/
+.reco_list a:link{
+	text-decoration: none;
+	color: maroon;
+}
+
+/*styling for section list link*/
+.reco_list a:visited{
+	text-decoration: none;
+	color: maroon;
+}
+
+/*styling for section list link*/
+.reco_list a:hover{
+	text-decoration: underline;
+}
+
+
+/*styling for picture on right side*/
+.imgright {
+	float : right;
+	padding-left: 50px;
+}
+
+/*styling for picture on left side*/
+.imgleft {
+	float: left;
+	padding-right: 50px;
+}
+
+/*styling for text*/
+.reco_text {
+	line-height: 1.4;
+	font-size: 20px;
+	white-space: normal;
+}
+
+/*styling for h2 inside the container*/
+.reco_text h2 {
+	font-size: 27px;
+	margin: 0px 0px 0px 0px;
+	line-height: 1.2;
+	white-space: pre-line;
+	padding-top: 0px;
+	border: none;
+}
+
+/*container for image and text*/
+.reco_book {
+	margin: auto;
+	margin-top: 120px;
+	margin-bottom: 60px;
+	border-radius: 15px;
+	background-color: #e8dac3;
+	padding: 60px;
+	width: 83%;
+	min-height: 620px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 2%;
+  z-index: 99;
+  /*z-index makes it appears infront*/
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  padding: 4px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-radius: 5px;
+  width: 5%;
+}
+
+
+/*after 800px the image will be on top of text*/
+@media screen and (max-width: 800px) {
+  .reco_text {
+	  display : block;
+    clear: both;
+  }
+  
+  .imgright{
+    float :none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .imgleft{
+    float :none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .reco_text h2 {
+	  padding-top: 20px;
+  }
+
+  .reco_book{
+  	padding: 5%;
+  }
+
+  #myBtn{
+  	width: 80%;
+  	position: fixed;
+  	bottom: 3%;
+  	right: 0px;
+  	left: 50%;
+    transform: translate(-50%, 0);
+
+  }
+
+}
+
+#myBtn:hover {
+  background-color: #c51236;
+}
+
+/*paragraph*/
+.tellus{
+	text-align: center;
+}
+
+.mystery{
+	width: 100%;
+	padding: 0 20%;
+	font-size: 20px;
+}
+
+.mystery ol{
+	list-style-type: upper-roman;
+	padding-bottom: 20px;
+}
+
+/*paragraph for mystery box*/
+.paragraphmb {
+	font-size: 20px;
+	padding-left: 50px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* text box*/
+.mb_box input[type=text] {
+	width: 75%;
+	padding: 12px;
+	border: 2px solid #ddd;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: Moccasin;
+	color: Sienna;
+}
+
+/*container for the form*/
+.mbcontainer {
+	margin: 50px;
+	border-radius: 15px;
+	background-color: #e8dac3;
+	padding: 40px;
+}
+
+
+/* Clear floats after the columns */
+.mb_row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*styling for the questions*/
+.mb_questions {
+	float: left;
+	padding-left : 50px;
+	width: 25%;
+	margin-top: 6px;
+	font-size: 20px;
+}
+
+
+/*styling for textarea for description*/
+.description_mb {
+	width: 75%;
+	height: 150px;
+	padding: 12px;
+	box-sizing: border-box;
+	border: 2px solid #ddd;
+	border-radius: 4px;
+	background-color: Moccasin;
+	font-size: 16px;
+	float: left;
+	color: Sienna;
+	resize: none;
+}
+
+/*for styling the length of text area*/
+.mb_box {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+
+/*another fancy fluid layout styling*/
+@media screen and (max-width: 770px) {
+
+  .mb_box input[type=text] {
+	width: 100%;
+  }
+
+  .mb_questions, .mb_box {
+	width: 100%;
+    margin-top: 8px;
+    padding-left: 0px;
+    margin-bottom: 2px;
+  }
+
+  .description_mb{
+    width: 100%;
+    margin-top: 0;
+    padding-right : 0px;
+  }
+
+  .mystery{
+	width: 100%;
+	padding: 0 5%;
+	font-size: 20px;
+	padding-top: 0%;
+	}
+}
+ 
+/* gender radio button*/
+.mb_gender {
+	display: block;
+	position: relative;
+	padding-left: 100px;
+	margin-bottom: 15px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+/* Hide the browser's default radio button */
+.mb_gender input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom radio button yk circle*/
+.mb_checkmark {
+	position: absolute;
+	top: 0;
+	left: 50px;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.mb_gender:hover input ~ .mb_checkmark {
+	background-color: #D9C5BC;
+}
+
+/* When the radio button is checked, background colour*/
+.mb_gender input:checked ~ .mb_checkmark {
+	background-color: #B6ADAF;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.mb_checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.mb_gender input:checked ~ .mb_checkmark:after {
+	display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.mb_gender .mb_checkmark:after {
+	top: 7.6px;
+	left: 7.45px;
+	width: 11px;
+	height: 11px;
+	border-radius: 60%;
+	background: white;
+}
+
+/*frequency radio button*/
+.mb_freq {
+	display: block;
+	position: relative;
+	padding-left: 100px;
+	margin-bottom: 15px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+/* Hide the browser's default radio button */
+.mb_freq input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom radio button you know circle*/
+.ab {
+	position: absolute;
+	top: 0;
+	left: 50px;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.mb_freq:hover input ~ .ab {
+	background-color: #D9C5BC;
+}
+
+/* When the radio button is checked, add a blue background */
+.mb_freq input:checked ~ .ab {
+	background-color: #B6ADAF;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.ab:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.mb_freq input:checked ~ .ab:after {
+	display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.mb_freq .ab:after {
+	top: 7.6px;
+	left: 7.45px;
+	width: 11px;
+	height: 11px;
+	border-radius: 60%;
+	background: white;
+}
+
+/*colour when hovering submit button*/
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+/*colour for submit button*/
+input[type=submit]{
+	width: 100px;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #4CAF50;
+	color: white;
+	cursor: pointer;
+	margin: 10px auto;
+}
+
+/*colour when hovering over reset button*/
+input[type=reset]:hover {
+	background-color: #45a049;
+}
+
+/*colour for reset button*/
+input[type=reset]{
+	width: 100px;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #4CAF50;
+	color: white;
+	cursor: pointer;
+	margin: 10px auto;
+}
+
+/*styling for descrption textarea*/
+.mb_box ::placeholder{
+	color: sienna;
+	opacity: 1;
+	font-family: sans-serif;
+}
+
+/*all button alignment*/
+.button{
+	text-align: center;
+}
